@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Massage Section</title>
+  
+</head>
+<body>
+
+  <h2>Enter Your Message</h2>
+  
+  <!-- Text field for input -->
+  <input type="text" id="greetingMessage" placeholder="Enter your  message here" class="text">
+  
+  <!-- Submit button -->
+  <br>
+  <br>
+  <br>
+  <button onclick="displayGreeting()">Submit</button>
+  
+  <!-- Section where the greeting message will be displayed -->
+  <div id="output"></div>
+  <hr>
+
+  <!-- Second assigment start  -->
+  <h2>Addition of Two Numbers</h2>
+  
+  <!-- Input fields for two numbers -->
+  <div class="input-container">
+    <input type="number" id="numb1" placeholder="Enter first number">
+    <input type="number" id="numb2" placeholder="Enter second number">
+  </div>
+  
+  <!-- Submit button to calculate the sum -->
+  <br>
+  <br>
+  <br>
+  <button onclick="addNumbers()" class="btn-2">Add</button>
+  <!-- Section where the result will be displayed -->
+  <br>
+  <br>
+  <div id="result"></div>
+  <hr>
+  <!-- third asigment start  -->
+  
+  <h2>Find the Largest of Three Numbers</h2>
+  
+  <!-- Input fields for three numbers -->
+  <div class="input-container3">
+    <input type="number" id="num1" placeholder="Enter first number" >
+    <input type="number" id="num2" placeholder="Enter second number">
+    <input type="number" id="num3" placeholder="Enter third number">
+  </div>
+  
+  <!-- Button to find the largest number -->
+  <br>
+  <br>
+  <button onclick="findLargest()" class="btn-3">Find Largest</button>
+  
+  <!-- Section where the result will be displayed -->
+  
+  <div id="resultdiv"></div>
+  <hr>
+  <!-- Fourth Assignment Start -->
+  <div class="container4">
+    <h1>Even or Odd Checker</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkEvenOdd()" class="button4">Check</button>
+    <div id="result4" class="result"></div>
+</div>
+<hr>
+<!-- Fifth ASSIGNMENT START  -->
+
+<div class="inputcontainer5">
+  <h1>Age Checker</h1>
+  <input type="number" id="ageInput" placeholder="Enter your age" >
+  <button onclick="checkIfAdult()" class="btn-5">Check</button>
+  <div id="result5" class="result5"></div>
+</div>
+
+
+
+
+
+
+
+  <script>
+    function displayGreeting() {
+      // Get the input value
+      const greeting = document.getElementById('greetingMessage').value;
+      
+      // If the input field is not empty, display the message
+      if (greeting) {
+        document.getElementById('output').innerText = "Nice to Meet You: " + greeting;
+      } else {
+        document.getElementById('output').innerText = "Please enter a message.";
+      }
+    }
+    // second Asssignment javascritp
+
+    function addNumbers() {
+      // Get the values from input fields and convert them to numbers
+      const num1 = parseFloat(document.getElementById('numb1').value);
+      const num2 = parseFloat(document.getElementById('numb2').value);
+      
+      // Check if both values are numbers (i.e., not NaN)
+      if (!isNaN(num1) && !isNaN(num2)) {
+        const sum = num1 + num2;
+        // Display the result
+        document.getElementById('result').innerText = " Answer is: " + sum;
+      } else {
+        // Handle invalid input
+        document.getElementById('result').innerText = "Please enter a numbers for product.";
+      }
+    }
+
+
+    
+    // Third Assignment Java Scripts
+    function findLargest() {
+      // Get the values from the input fields
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const num3 = parseFloat(document.getElementById('num3').value);
+      
+      // Check if all values are valid numbers
+      if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+        // Find the largest number
+        const largest = Math.max(num1, num2, num3);
+        
+        // Display the largest number
+        document.getElementById('resultdiv').innerText = "The largest number is: " + largest;
+      } else {
+        // Handle invalid input
+        document.getElementById('resultdiv').innerText = "Please enter valid numbers for all fields.";
+      }
+    }
+    // fourth Assignment Javascripts
+
+
+    function checkEvenOdd() {
+        // Get the value entered by the user
+        var number = document.getElementById("numberInput").value;
+
+        // Ensure the input is a valid number
+        if (number === "") {
+            alert("Please enter a number.");
+            return;
+        }
+
+        // Check if the number is even or odd
+        var resultText;
+        var resultClass;
+
+        if (number % 2 === 0) {
+            resultText = number + " is even.";
+            resultClass = "even";
+        } else {
+            resultText = number + " is odd.";
+            resultClass = "odd";
+        }
+
+        // Display the result
+        var resultDiv = document.getElementById("result4");
+        resultDiv.textContent = resultText;
+        resultDiv.className = "result " + resultClass;
+    }
+
+
+
+    // Fifthy Assignment Javascript
+
+    function checkIfAdult() {
+        // Get the value entered by the user
+        var age = document.getElementById("ageInput").value;
+
+        // Ensure the input is a valid number
+        if (age === "" || age <= 0) {
+            alert("Please enter a valid age.");
+            return;
+        }
+
+        // Check if the user is an adult (age 18 or older)
+        var resultText;
+        var resultClass;
+
+        if (age >= 18) {
+            resultText = "You are an adult.";
+            resultClass = "adult";
+        } else {
+            resultText = "You are a minor.";
+            resultClass = "minor";
+        }
+
+        // Display the result
+        var resultDiv = document.getElementById("result5");
+        resultDiv.textContent = resultText;
+        resultDiv.className = "result5 " + resultClass;
+    }
+  
+  </script>
+
+</body>
+</html>
