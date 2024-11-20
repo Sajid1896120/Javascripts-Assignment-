@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: blue;
+
+
+  }
+  #output {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4CAF50;
+  }
+
+  h2{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(5, 253, 5);
+
+  }
+
+  .text{
+    font-size: 50px;
+    margin-left: 28%;
+    color: green;
+    border: 1px solid rgba(3, 199, 3, 0.751) ;
+    border-radius: 8px;
+  }
+  button{
+    font-size: 25px;
+    padding: 5px;
+    color: rgb(170, 255, 0);
+    margin-left: 48%;
+    background-color: black ;
+  }
+  /* second assigment css styling  */
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+  }
+
+  .input-container {
+    margin-bottom: 15px;
+    margin-left: 10%;
+  }
+
+  input[type="number"] {
+    padding: 8px;
+    margin-right: 10px;
+    width: 500px;
+    font-size: 35px;
+
+  }
+  .btn-2 {
+    padding: 10px 30px;
+    background-color: #4CAF50;
+    color: rgb(0, 250, 230);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 48%;
+  }
+  /* Third Assignment Css Styling  */
+  #resultdiv {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .btn-3 {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 45%;
+  }
+  .input-container3 {
+    margin-bottom: 15px;
+    margin-left: 10%;
+  }
+  .input-container3 [type="number"] {
+    padding: 8px;
+    margin-right: 10px;
+    width: 350px;
+    font-size: 28px;
+    border-radius: 10px;
+  }
+  #resultdiv {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+  }
+  /* fourth assignment css styling */
+  .container4 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-left: 38%;
+    
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.even {
+  color: green;
+}
+
+.odd {
+  color: red;
+}
+button:hover {
+  background-color: #45a049;
+}
+.button4 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 100px
+}
+
+#numberInput {
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+/* fifth assignment */
+.inputcontainer5 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  margin-left: 38%;
+}
+#ageInput[type="number"] {
+  padding: 10px;
+  width:80%;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn-5 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.result5 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.adult {
+  color: green;
+}
+
+.minor {
+  color: red;
+}
+  
